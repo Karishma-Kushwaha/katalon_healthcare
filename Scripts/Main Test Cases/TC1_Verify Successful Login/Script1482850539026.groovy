@@ -33,8 +33,10 @@ WebUI.setText(findTestObject('Page_Login/txt_Password'), Password)
 
 WebUI.comment('When he logins to CURA system')
 
+'Click on login button'
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 
+'Logged in successfully'
 WebUI.comment('Then he should be able to login successfully')
 
 landingPage = WebUI.verifyElementPresent(findTestObject('Page_CuraAppointment/div_Appointment'), GlobalVariable.G_Timeout)
